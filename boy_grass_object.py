@@ -44,7 +44,12 @@ class Zombie:
 
 class Ball:
     def __init__(self):
-        pass
+        ballType = random.randint(0,1)  # 0 : 작은공, 1 : 큰 공
+        if ballType == 0:
+            pass
+        else:
+            pass
+        
     def update(self):
         pass
     def draw(self):

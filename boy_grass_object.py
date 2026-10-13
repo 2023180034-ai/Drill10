@@ -44,11 +44,16 @@ class Zombie:
 
 class Ball:
     def __init__(self):
-        ballType = random.randint(0,1)  # 0 : 작은공, 1 : 큰 공
-        if ballType == 0:
-            pass
+        self.ballType = random.randint(0,1)  # 0 : 작은공, 1 : 큰 공
+        if self.ballType == 0:
+            self.image = load_image('ball21x21.png')
+            self.x = random.randint(100, 700)
+            self.y = 599
         else:
-            pass
+            self.image = load_image('ball41x41.png')
+            self.x = random.randint(100, 700)
+            self.y = 599
+        
         
     def update(self):
         pass

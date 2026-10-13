@@ -57,11 +57,11 @@ class Ball:
             self.speed = random.randint(5, 8) # 낙하 속도 5 ~ 8
 
     def update(self):
+        self.y -= self.speed
 
-        pass
     def draw(self):
         self.image.draw(self.x, self.y)
-    pass
+    
 
 def handle_events():
     global running

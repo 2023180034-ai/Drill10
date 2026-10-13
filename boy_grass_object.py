@@ -1,7 +1,6 @@
 from pico2d import *
 import random
 
-
 # Game object class here
 
 class Grass:
@@ -68,12 +67,9 @@ class Ball:
             else:
                 self.y -= self.speed
 
-        
-
     def draw(self):
         self.image.draw(self.x, self.y)
     
-
 def handle_events():
     global running
     events = get_events()

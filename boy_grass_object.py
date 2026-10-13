@@ -57,13 +57,13 @@ class Ball:
             self.speed = random.randint(5, 8) # 낙하 속도 5 ~ 8
 
     def update(self):
-        if self.ballType == 0:          # 작은 공
-            if self.y <= 30:
+        if self.ballType == 0:          # 작은 공 사이즈 20 넉넉잡아 25쯤 하면 딱맞음
+            if self.y - 25 <= 30:
                 pass
             else:
                 self.y -= self.speed
-        else:                           # 큰 공
-            if self.y <= 30:
+        else:                           # 큰 공 사이즈 40
+            if self.y - 40 <= 30:
                 pass
             else:
                 self.y -= self.speed

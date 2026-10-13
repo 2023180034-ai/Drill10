@@ -42,6 +42,11 @@ class Zombie:
         frame_height = self.image.h
         self.image.clip_draw(self.frame * frame_width, 0, frame_width, frame_height, self.x, self.y, frame_width // 2, frame_height // 2)
 
+class Ball:
+    
+    pass
+
+
 def handle_events():
     global running
     events = get_events()

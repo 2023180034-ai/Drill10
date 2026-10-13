@@ -47,14 +47,14 @@ class Ball:
         self.ballType = random.randint(0,1)  # 0 : 작은공, 1 : 큰 공
         if self.ballType == 0:
             self.image = load_image('ball21x21.png')
-            self.x = random.randint(100, 700)
+            self.x = random.randint(40, 760)
             self.y = 599
-            self.speed = random.randint(5, 8) # 낙하 속도 5 ~ 8
+            self.speed = random.randint(5, 15) # 낙하 속도 5 ~ 13
         else:
             self.image = load_image('ball41x41.png')
-            self.x = random.randint(100, 700)
+            self.x = random.randint(40, 760)
             self.y = 599
-            self.speed = random.randint(5, 8) # 낙하 속도 5 ~ 8
+            self.speed = random.randint(10, 19) # 낙하 속도 13 ~ 19
 
     def update(self):
         if self.ballType == 0:          # 작은 공 사이즈 20 넉넉잡아 25쯤 하면 딱맞음

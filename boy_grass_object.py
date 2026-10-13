@@ -74,6 +74,9 @@ def reset_world():      # 초기화
     zombie = Zombie()
     world.append(zombie)
 
+    balls = [Ball() for i in range(20)]
+    world += balls
+
     team = [Boy() for i in range(11)]
     world += team
 

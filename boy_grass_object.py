@@ -57,7 +57,10 @@ class Ball:
             self.speed = random.randint(5, 8) # 낙하 속도 5 ~ 8
 
     def update(self):
-        self.y -= self.speed
+        if self.y <= 30:
+            pass
+        else:
+            self.y -= self.speed
 
     def draw(self):
         self.image.draw(self.x, self.y)

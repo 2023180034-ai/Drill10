@@ -49,15 +49,19 @@ class Ball:
             self.image = load_image('ball21x21.png')
             self.x = random.randint(100, 700)
             self.y = 599
+            self.speed = random.randint(5, 8) # 낙하 속도 5 ~ 8
         else:
             self.image = load_image('ball41x41.png')
             self.x = random.randint(100, 700)
             self.y = 599
-        
-        
+            self.speed = random.randint(5, 8) # 낙하 속도 5 ~ 8
+
     def update(self):
+
         pass
     def draw(self):
+
+
         pass
     pass
 

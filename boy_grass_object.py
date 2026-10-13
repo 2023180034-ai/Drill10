@@ -60,9 +60,7 @@ class Ball:
 
         pass
     def draw(self):
-
-
-        pass
+        self.image.draw(self.x, self.y)
     pass
 
 def handle_events():
